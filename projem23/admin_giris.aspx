@@ -62,6 +62,7 @@
                                                     Me</label>
                                             </div>
                                         </div>
+                                        <asp:Label ID="Label1" class="alert alert-warning" runat="server" Visible="False"></asp:Label>
                                         <asp:Button ID="Button1" runat="server" class="btn btn-primary btn-user btn-block" Text="Login" OnClick="Button1_Click" />
                                         
                                         <hr>

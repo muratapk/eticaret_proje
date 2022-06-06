@@ -21,6 +21,16 @@ namespace projem23
             string pass = TextBox2.Text;
 
             var sorgu = (from x in db.admin where x.users == users && x.pass == pass select x).FirstOrDefault();
+            if(sorgu!=null)
+            {
+                Response.Redirect("main.aspx");
+            }
+            else
+            {
+                //Response.Redirect("admin_giris.aspx");
+                Label1.Visible = true;
+                Label1.Text = "Kullanıcı adı veya parola yanlış";
+            }
             //Response.Write("<script>alert('Giriş Onaylandı')</script>");
             //Response.Redirect("main.aspx");
         }
