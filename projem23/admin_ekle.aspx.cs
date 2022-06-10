@@ -13,6 +13,7 @@ namespace projem23
         protected void Page_Load(object sender, EventArgs e)
         {
             doldur();
+            Panel3.Visible = false;
         }
         void doldur()
         {
@@ -34,12 +35,43 @@ namespace projem23
 
         protected void Button4_Click(object sender, EventArgs e)
         {
-            var sorgu = (from x in db.admin where x.users == users.Text select x).FirstOrDefault();
-            users.Text = sorgu.users;
-            pass.Text = sorgu.pass;
+            Panel3.Visible = true;
+            //var sorgu = (from x in db.admin where x.users == users.Text select x).FirstOrDefault();
+            //users.Text = sorgu.users;
+            //pass.Text = sorgu.pass;
 
             //GridView1.DataSource = sorgu;
             //GridView1.DataBind();
+        }
+
+        protected void arananbtn_Click(object sender, EventArgs e)
+        {
+            int ara = int.Parse(aranantxt.Text);
+            var sorgu = (from x in db.admin where x.Id == ara select x).FirstOrDefault();
+            users.Text = sorgu.users;
+            pass.Text = sorgu.pass;
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            int ara = int.Parse(aranantxt.Text);
+            var sorgu = (from x in db.admin where x.Id == ara select x).FirstOrDefault();
+            sorgu.users = users.Text;
+            sorgu.pass = pass.Text;
+            db.SaveChanges();
+            doldur();
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            int ara = int.Parse(aranantxt.Text);
+            var sorgu = (from x in db.admin where x.Id == ara select x).FirstOrDefault();
+            db.admin.Remove(sorgu);
+            db.SaveChanges();
+            doldur();
+            users.Text="";
+            pass.Text = "";
+
         }
     }
 }

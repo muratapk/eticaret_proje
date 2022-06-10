@@ -75,9 +75,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin_duz.aspx" />
     <Content Include="admin_ekle.aspx" />
     <Content Include="admin_giris.aspx" />
     <Content Include="admin_liste.aspx" />
+    <Content Include="admin_sil.aspx" />
     <Content Include="Global.asax" />
     <Content Include="kategoriler.aspx" />
     <Content Include="main.aspx" />
@@ -1797,6 +1799,13 @@
     <Compile Include="admin.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="admin_duz.aspx.cs">
+      <DependentUpon>admin_duz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_duz.aspx.designer.cs">
+      <DependentUpon>admin_duz.aspx</DependentUpon>
+    </Compile>
     <Compile Include="admin_ekle.aspx.cs">
       <DependentUpon>admin_ekle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1824,6 +1833,13 @@
     </Compile>
     <Compile Include="admin_login.Master.designer.cs">
       <DependentUpon>admin_login.Master</DependentUpon>
+    </Compile>
+    <Compile Include="admin_sil.aspx.cs">
+      <DependentUpon>admin_sil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_sil.aspx.designer.cs">
+      <DependentUpon>admin_sil.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

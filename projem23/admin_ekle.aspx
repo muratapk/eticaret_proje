@@ -21,8 +21,8 @@
              <asp:Label ID="Label1" runat="server" Text="Aranacak Admin Numarası"></asp:Label>
              <asp:TextBox ID="aranantxt" CssClass="form-control" runat="server" Width="206px"></asp:TextBox>
          </div>
-         <div class="form-control">
-               <asp:Button ID="arananbtn" CssClass="btn btn-danger" runat="server" Text="Arama Yap" />
+         <div class="form-group">
+               <asp:Button ID="arananbtn" CssClass="btn btn-danger" runat="server" Text="Arama Yap" OnClick="arananbtn_Click" />
          </div>
         
        
@@ -30,8 +30,8 @@
 
      <asp:Button ID="Button1" class="btn btn-primary" runat="server" Text="Kaydet" OnClick="Button1_Click" />
      
-     <asp:Button ID="Button2" runat="server" CssClass="btn btn-info" Text="Silme" />
-     <asp:Button ID="Button3" runat="server" class="btn btn-danger" Text="Düzeltme" />
+     <asp:Button ID="Button2" runat="server" CssClass="btn btn-info" Text="Silme" OnClick="Button2_Click" />
+     <asp:Button ID="Button3" runat="server" class="btn btn-danger" Text="Düzeltme" OnClick="Button3_Click" />
      <asp:Button ID="Button4" runat="server" CssClass="btn btn-success" Text="Arama" OnClick="Button4_Click" />
      
      <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" BackColor="White" BorderColor="#CC9966" BorderStyle="None" BorderWidth="1px" CellPadding="4" Width="599px">
