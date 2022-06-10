@@ -6,6 +6,7 @@
     <edmx:Diagrams>
       <Diagram DiagramId="cd805f04db1248539ecccfe3e402ea4b" Name="Diagram1">
         <EntityTypeShape EntityType="ticaretModel.admin" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ticaretModel.kategoriler" Width="1.5" PointX="3.375" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

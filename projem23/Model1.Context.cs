@@ -26,5 +26,6 @@ namespace projem23
         }
     
         public virtual DbSet<admin> admin { get; set; }
+        public virtual DbSet<kategoriler> kategoriler { get; set; }
     }
 }
