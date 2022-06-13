@@ -15,6 +15,6 @@ namespace projem23
     public partial class kategoriler
     {
         public int Id { get; set; }
-        public string kategori_adi { get; set; }
+        public string kategori_Adi { get; set; }
     }
 }

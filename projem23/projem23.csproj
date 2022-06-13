@@ -82,11 +82,14 @@
     <Content Include="admin_sil.aspx" />
     <Content Include="Global.asax" />
     <Content Include="kategoriler.aspx" />
+    <Content Include="kategori_duz.aspx" />
+    <Content Include="kategori_ekle.aspx" />
+    <Content Include="kategori_sil.aspx" />
     <Content Include="main.aspx" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
       <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -1793,6 +1796,7 @@
     <Content Include="sablon\admin\vendor\jquery\jquery.min.js" />
     <Content Include="sablon\admin\vendor\jquery\jquery.slim.js" />
     <Content Include="sablon\admin\vendor\jquery\jquery.slim.min.js" />
+    <Content Include="urun_ekle.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -1854,6 +1858,27 @@
     <Compile Include="kategoriler.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="kategori_duz.aspx.cs">
+      <DependentUpon>kategori_duz.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kategori_duz.aspx.designer.cs">
+      <DependentUpon>kategori_duz.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kategori_ekle.aspx.cs">
+      <DependentUpon>kategori_ekle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kategori_ekle.aspx.designer.cs">
+      <DependentUpon>kategori_ekle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kategori_sil.aspx.cs">
+      <DependentUpon>kategori_sil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kategori_sil.aspx.designer.cs">
+      <DependentUpon>kategori_sil.aspx</DependentUpon>
+    </Compile>
     <Compile Include="main.aspx.cs">
       <DependentUpon>main.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1877,6 +1902,13 @@
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="urun_ekle.aspx.cs">
+      <DependentUpon>urun_ekle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="urun_ekle.aspx.designer.cs">
+      <DependentUpon>urun_ekle.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="admin_login.Master" />

@@ -11,16 +11,25 @@ namespace projem23
 {
 
 
-    public partial class admin_login
+    public partial class kategori_duz
     {
 
         /// <summary>
-        /// ContentPlaceHolder1 denetimi.
+        /// adi denetimi.
         /// </summary>
         /// <remarks>
         /// Otomatik üretilmiş alan.
         /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.TextBox adi;
+
+        /// <summary>
+        /// kayit denetimi.
+        /// </summary>
+        /// <remarks>
+        /// Otomatik üretilmiş alan.
+        /// Değiştirmek için, alan bildirimini tasarımcı dosyasından arka plan kod dosyasına taşıyın.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button kayit;
     }
 }
